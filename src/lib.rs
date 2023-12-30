@@ -18,7 +18,7 @@ impl<'a, TT: Eq + Copy> Token<'a, TT> {
     }
 }
 
-pub struct Parser<'a, TT: Eq + Copy> {
+pub struct Parser<'a, TT> {
     tokens: &'a Vec<Token<'a, TT>>,
     idx: usize,
 }
